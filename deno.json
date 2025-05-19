@@ -1,0 +1,17 @@
+{
+    "name": "@quartinal/securly-url-tester",
+    "version": "1.0.0",
+    "exports": "./dist/index.js",
+    "imports": {
+        "tspromise": "npm:ts-promise",
+        "dom": "npm:linkedom",
+        "fflate": "npm:fflate"
+    },
+    "fmt": {
+        "bracePosition": "maintain",
+        "trailingCommas": "onlyMultiLine",
+        "indentWidth": 4,
+        "singleQuote": false,
+        "semiColons": true
+    }
+}
