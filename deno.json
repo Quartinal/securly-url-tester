@@ -3,9 +3,12 @@
     "version": "1.0.0",
     "exports": "./dist/index.js",
     "imports": {
+        "neverthrow": "npm:neverthrow@^8.2.0",
         "tspromise": "npm:ts-promise",
         "dom": "npm:linkedom",
-        "fflate": "npm:fflate"
+        "fflate": "npm:fflate",
+        "nvt": "npm:neverthrow",
+        "ts": "npm:typescript"
     },
     "fmt": {
         "bracePosition": "maintain",

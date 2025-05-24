@@ -3,7 +3,6 @@ import { platform } from "node:os";
 import { DOMParser } from "dom";
 
 export default async function getId() {
-    // @ts-expect-error: document is not available in Deno
     const isBrowser = typeof globalThis.document !== "undefined";
     const isNotBrowser = !isBrowser;
 
@@ -23,7 +22,6 @@ export default async function getId() {
 }
 
 function isChromeOS() {
-    // @ts-expect-error: document is not available in Deno
     const isBrowser = typeof globalThis.document !== "undefined";
     const isNotBrowser = !isBrowser;
 
@@ -69,8 +67,8 @@ export async function getIDURLVersionFromSecurlyDomain(id: string) {
                 .querySelector(
                     "gupdate",
                 )!.querySelectorAll("app");
-            // @ts-expect-error: linkedom has a lot of unknowns
             const app = Array.from(mlDoc).find((app) =>
+                // @ts-expect-error: linkedom has a lot of unknowns
                 app.getAttribute("appid") === id
             );
 

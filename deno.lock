@@ -4,9 +4,17 @@
     "npm:@types/node@*": "22.15.15",
     "npm:fflate@*": "0.8.2",
     "npm:linkedom@*": "0.18.10",
-    "npm:ts-promise@*": "2.2.0"
+    "npm:neverthrow@*": "8.2.0",
+    "npm:neverthrow@^8.2.0": "8.2.0",
+    "npm:ts-promise@*": "2.2.0",
+    "npm:typescript@*": "5.8.3"
   },
   "npm": {
+    "@rollup/rollup-linux-x64-gnu@4.41.0": {
+      "integrity": "sha512-XMLeKjyH8NsEDCRptf6LO8lJk23o9wvB+dJwcXMaH6ZQbbkHu2dbGIUindbMtRN6ux1xKi16iXWu6q9mu7gDhQ==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    },
     "@types/node@22.15.15": {
       "integrity": "sha512-R5muMcZob3/Jjchn5LcO8jdKwSCbzqmPB6ruBxMcf9kbxtniZHP327s6C37iOfuw8mbKK3cAQa7sEl7afLrQ8A==",
       "dependencies": [
@@ -88,6 +96,12 @@
         "uhyphen"
       ]
     },
+    "neverthrow@8.2.0": {
+      "integrity": "sha512-kOCT/1MCPAxY5iUV3wytNFUMUolzuwd/VF/1KCx7kf6CutrOsTie+84zTGTpgQycjvfLdBBdvBvFLqFD2c0wkQ==",
+      "optionalDependencies": [
+        "@rollup/rollup-linux-x64-gnu"
+      ]
+    },
     "nth-check@2.1.1": {
       "integrity": "sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==",
       "dependencies": [
@@ -96,6 +110,10 @@
     },
     "ts-promise@2.2.0": {
       "integrity": "sha512-zd4uLOBGg6DPqhX8DL1LW2R9AmwCeeCC2OPfUkStUfBxCsuRE1xtcf0eTPfxpEQpl2el9UzsnXoWBnY4V7rRuA=="
+    },
+    "typescript@5.8.3": {
+      "integrity": "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==",
+      "bin": true
     },
     "uhyphen@0.2.0": {
       "integrity": "sha512-qz3o9CHXmJJPGBdqzab7qAYuW8kQGKNEuoHFYrBwV6hWIMcpAmxDLXojcHfFr9US1Pe6zUswEIJIbLI610fuqA=="
@@ -108,7 +126,10 @@
     "dependencies": [
       "npm:fflate@*",
       "npm:linkedom@*",
-      "npm:ts-promise@*"
+      "npm:neverthrow@*",
+      "npm:neverthrow@^8.2.0",
+      "npm:ts-promise@*",
+      "npm:typescript@*"
     ]
   }
 }

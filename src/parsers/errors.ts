@@ -1,4 +1,4 @@
-export default function parseError(error: string) {
+/*export default function parseError(error: string) {
     const sides = error.split("|");
 
     const noExtensionId = sides[0] === "unknown";
@@ -9,4 +9,4 @@ export default function parseError(error: string) {
         console.log("Error: code", errorCode);
         console.log("No extension ID was found either.");
     }
-}
+}*/

@@ -1,4 +1,3 @@
-//deno-lint-ignore-file
 import { crextnBaseUrl } from "../index.ts";
 
 export default function isSiteAllowed(url: string, userEmail: string) {
